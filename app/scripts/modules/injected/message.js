@@ -7,7 +7,7 @@ module.exports = {
      */
     send: function (object) {
         var message = {
-            detail: JSON.parse(JSON.stringify(object))
+            detail: JSON.parse(JSON.stringify(JSON.decycle(object)))
         };
 
         document.dispatchEvent(new CustomEvent('ui5-communication-with-content-script', message));

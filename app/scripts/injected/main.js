@@ -1,6 +1,7 @@
 sap.ui.require(['ToolsAPI'], function (ToolsAPI) {
     'use strict';
-
+    
+    require('../modules/utils/cycle');
     var ui5inspector = require('../modules/injected/ui5inspector.js');
     var message = require('../modules/injected/message.js');
     var controlUtils = require('../modules/injected/controlUtils.js');
